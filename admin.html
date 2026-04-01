@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loginAdmin">
+  <h2>Admin Login</h2>
+  <input type="password" id="adminPass" placeholder="Password">
+  <button onclick="adminLogin()">Login</button>
+</div>
+
+<div id="adminPanel" style="display:none;">
+  <h2>Admin Panel</h2>
+
+  <button onclick="createKey('day')">Tạo Key Ngày</button>
+  <button onclick="createKey('week')">Tạo Key Tuần</button>
+  <button onclick="createKey('month')">Tạo Key Tháng</button>
+
+  <h3>Danh sách key:</h3>
+  <ul id="keyList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
